@@ -71,7 +71,8 @@ const FindBlood = () => {
 
       {donors.map((donor) => (
   <div className="donor-card" key={donor._id}>
-    <h3>{donor.name}</h3>
+    {/* <h3>{donor.name}</h3> */}
+    <h3><strong>Name:</strong>{donor.name}</h3>
     <p><strong>Blood Group:</strong> {donor.bloodGroup}</p>
     <p><strong>Phone:</strong> {donor.phone}</p>
     <p><strong>City:</strong> {donor.city}</p>
