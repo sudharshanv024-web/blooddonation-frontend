@@ -59,7 +59,7 @@ const FindBlood = () => {
       <button className="mainButton" onClick={handleSearch}>
         Search
       </button>
-
+{/* 
       {donors.map((donor) => (
         <div key={donor._id}>
           <p>Name: {donor.name}</p>
@@ -67,8 +67,18 @@ const FindBlood = () => {
           <p>Phone: {donor.phone}</p>
           <p>City: {donor.city}</p>
         </div>
-      ))}
+      ))} */}
+
+      {donors.map((donor) => (
+  <div className="donor-card" key={donor._id}>
+    <h3>{donor.name}</h3>
+    <p><strong>Blood Group:</strong> {donor.bloodGroup}</p>
+    <p><strong>Phone:</strong> {donor.phone}</p>
+    <p><strong>City:</strong> {donor.city}</p>
+  </div>
+))}
     </div>
+
   )
 }
 
