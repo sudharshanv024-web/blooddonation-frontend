@@ -23,7 +23,8 @@ const DonateBlood = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/donate", { 
+      // const response = await fetch("http://localhost:5000/api/donate", { 
+      const response = await fetch("https://bldbackend.onrender.com/api/donate", { 
         method: "POST", 
         headers: { 
           "Content-Type": "application/json" 

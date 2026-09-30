@@ -19,7 +19,7 @@ const FindBlood = () => {
       console.log(typeof(bloodGroup));
 
       const response = await fetch(
-        `http://localhost:5000/api/list/${bloodGroup}`
+        `https://bldbackend.onrender.com/api/list/${bloodGroup}`
       )
 
       const data = await response.json()
